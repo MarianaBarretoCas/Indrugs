@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <div class="cabeza">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Indrugs</title>
+    <script src="https://kit.fontawesome.com/14122cd484.js" crossorigin="anonymous"></script>
+    <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
+	<link rel="stylesheet" href="css/1.estilos_pagina_inicio.css">
+	<link rel="stylesheet" href="css/9.estilos_pagina_aspirina.css">
+</head>
+
+<body>
+	<header class="cabeza_indrugs">
+        <div class="contenedeor_cabeza logo_nav_items">
+            <a href="#" class="logo"><img class="img_indrugs_logo" src="imagenes/logo.png">Indrugs</a>
+            <a href="#"><input type="search" placeholder="Buscar..." id="buscador"></a>
+            <nav class="navegacion_1">
+                <ul class="barra_1">
+                    <li id="items_barra1"><a href="4.pagina_domicilio.html" id="enlaces_barra1"><img id="iconos"src="Iconos/ubicacion.png"></a></li>
+                    <li id="items_barra1"><a href="8.pagina_med.html" id="enlaces_barra1"><img id="iconos"src="Iconos/compras.png"></a></li>
+                    <li id="items_barra1"><a href="2.pagina_inicio_sesion.html" id="enlaces_barra1"><img id="iconos"src="Iconos/usuario.png"></a></li>
+                    <li id="items_barra1"><a href="5.pagina_pqrs.html" id="enlaces_barra1"><img id="iconos"src="Iconos/alerta.png"></a></li>
+                </ul>
+            </nav>   
+        </div>
+        <hr class="linea_separación">
+        <div class="contenedeor_cabeza logo_nav_items">
+            <nav class="menu">
+                <ul class="barra_2">
+                    <li id="items_barra"><a id="enlaces_barra" href="index.html">Inicio</a></li>
+                    <li id="items_barra"><a id="enlaces_barra" href="4.pagina_domicilio.html">Domicilio</a></li>
+                    <li id="items_barra"><a id="enlaces_barra" href="3.pagina_de_control.html">Control</a></li>
+                    <li id="items_barra"><a id="enlaces_barra" href="8.pagina_med.html">Medicamentos</a></li>
+                    <li id="items_barra"><a id="enlaces_barra" href="#eps">EPS</a></li>
+                    <li id="items_barra"><a id="enlaces_barra" href="5.pagina_pqrs.html">PQRS</a></li> 
+                </ul>
+            </nav>
+        </div>
+        <hr class="linea_separación">
+    </header>
+    <main class="cuerpo_indrugs">
+        <div class="contenido">
+            <div class="contiene-img"> 
+                <img class="img_aspirina" src="imagenes/MEDICAMENTOS/TABLA/atorvastatina.webp" alt="">   
+                <div class="info-medicamento">
+                    <h1 class="rexona">ATORVASTATINA</h1>
+                    <p class="rexona">Este medicamento lo cubre su EPS.</p>
+                    Elija la cantidad <input id="cantidad_solicitada" type="number" min="1" max="10" required>
+                    <a href="4.pagina_domicilio.html"><input id="boton_solicitar" type="submit" value="Solicitar"></a>
+                </div>
+            </div>
+        </div>    
+    </main>
+    <footer class="pie-pagina">
+	<hr class="linea_separación">
+        <div class="grupo-1">
+
+            <div class="box">
+                <h2>Contactanos</h2>
+                <hr class="linea_separación"><p><i class="fa-solid fa-phone" style="color: #6bd10c;"></i> 601 6783 546 / 601 6789 564</p>
+                <p> <i class="fa-brands fa-whatsapp" style="color: #6bd10c;"></i> Línea WhatsApp 327 678 5679</p>
+            </div>
+
+            <div class="box">
+                <h2>Nuestras tiendas</h2>
+                <hr class="linea_separación"><p> Ubicar tienda  </p>
+            </div>
+
+            <div class="box">
+                <h2> Categorias </h2>
+                <hr class="linea_separación"><p>EPS   </p>
+                <p>PQRS   </p>
+                <p>Control </p>
+                <p>Domicilios</p>
+                <p>Medicamentos</p> 
+                <p>Solicitar servicios</p>
+            </div>
+
+            <div class="box">
+                <h2> Nosotros</h2>
+                <hr class="linea_separación"><p> Quienes somos</p>
+                <p> Nuestra historia </p>    
+            </div>   
+
+        </div>
+
+        <div class="grupo-2">
+            <hr class="linea_separación">
+            <small>DISPENSADORA DE MEDICAMENTOS InDrugs - La salud llega a tu puerta</small> 
+            <hr class="linea_separación">  
+        </div>    
+    </footer>
+</body>
+</html>

@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+/*toda la pagina*/
+body{
+    font-family: Quicksand;
+    margin: 0;
+}
+/*lineas*/
+.linea_separación{
+	height: 2px;
+	background-color: rgb(107, 209, 12);
+    margin-bottom: 0;
+}
+/*Encabezado*/
+/*letra y fondo*/
+.contenedeor_cabeza{
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+.logo_nav_items{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.cabeza_indrugs{
+    background-color: #022c5c;
+    color:rgb(212, 239, 250);
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+/*Logo*/
+.img_indrugs_logo{
+    width: 65px;
+    margin-top: 0px;
+    margin-left: 5px;
+}  
+    .logo{
+        letter-spacing: 0.1rem;
+        font-size: 55px;
+        font-weight: 900;
+        color:rgb(212, 239, 250);
+        text-decoration: none;
+    }
+    
+#buscador {
+    background-color:#f5f5f5;
+    width: 300px;
+    border: solid 1px rgb(107, 209, 12);
+    border-bottom: solid 1px rgb(107, 209, 12);
+    padding: 5px 5px 5px 5px;
+    outline: none;
+    border-radius: 15px;
+    
+}
+/*Barra nav 1*/  
+#iconos{
+    width:30px;
+    margin-top: 0px;
+    margin-left: 5px;
+    border-radius: 70%;
+}
+    .navegacion_1 .barra_1{
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        font-size: 22px;
+        font-weight: 700;
+        width: 100%;
+    }
+        .navegacion_1 .barra_1 #items_barra1{
+            display: inline-block;
+        }
+            .navegacion_1 .barra_1 #items_barra1 #enlaces_barra1{
+                display: block;
+                padding: 0.5rem 1rem;
+                transition: all 0.4s linear;
+                border-radius: 7px;
+            }
+                .navegacion_1 .barra_1 #items_barra1 #enlaces_barra1:hover{
+                    background: rgb(107, 209, 12);
+                    padding: 0.3rem 0.5rem 0.1rem 0.3rem;
+                    margin-top: 6px;
+                    border-radius: 70%;
+                }
+/*Barra nav 2*/
+.menu .barra_2{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-size: 22px;
+    font-weight: 700;
+    width: 100%;
+}
+    .menu .barra_2 #items_barra{
+        display: inline-block;
+    }
+        .menu .barra_2 #items_barra #enlaces_barra{
+            display: block;
+            padding: 0.5rem 1rem;
+            transition: all 0.4s linear;
+            border-radius: 7px;
+            color:rgb(212, 239, 250);
+            text-decoration: none;
+        }
+            .menu .barra_2 #items_barra #enlaces_barra:hover{
+                background: rgb(107, 209, 12);
+                padding: 0.7rem 1.5rem;
+                margin-top: 6px;
+            }
+/*Codigo ajustable*/
+@media only screen and (max-width:767px){
+    .navegacion_1{
+        width: 100%;
+        margin-top: 1rem;
+    }
+        .navegacion_1 .barra_1 #items_barra1{
+            display: block;
+        }
+            .navegacion_1 .barra_1 #items_barra1 #enlaces_barra1{
+                display: block;
+                padding: 0.2rem 0;
+                transition: all 0.4s linear;
+                border-radius: 7px;
+            }
+                .navegacion_1 .barra_1 #items_barra1 #enlaces_barra1:hover{
+                    background: rgb(107, 209, 12);
+                    padding: 30;
+                    border-radius: 2%;
+                }
+/*Barra nav 2*/
+.menu{
+    width: 100%;
+    margin-top: 1rem;
+}
+    .menu .barra_2 #items_barra{
+        display: block;
+    }
+        .menu .barra_2 #items_barra #enlaces_barra{
+            display: block;
+            padding: 0.5rem 0;
+            transition: all 0.4s linear;
+            border-radius: 7px;
+        }
+            .menu .barra_2 #items_barra #enlaces_barra:hover{
+                background: rgb(107, 209, 12);
+            }
+}
+/*Cuerpo*/            
+.cuerpo_indrugs{
+    padding-top: 10rem;
+}
+.contenido{
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+}

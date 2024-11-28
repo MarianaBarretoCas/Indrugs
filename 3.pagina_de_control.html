@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <div class="cabeza">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Control</title>
+    <script src="https://kit.fontawesome.com/14122cd484.js" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="css/1.estilos_pagina_inicio.css">
+    <link rel="stylesheet" href="css/3.estilos_página_control.css">
+        
+</head>
+
+<body>
+	<header class="cabeza_indrugs">
+        <div class="contenedeor_cabeza logo_nav_items">
+            <a href="#" class="logo"><img class="img_indrugs_logo" src="imagenes/logo.png">Indrugs</a>
+            <a href="#"><input type="search" placeholder="Buscar..." id="buscador"></a>
+            <nav class="navegacion_1">
+                <ul class="barra_1">
+                    <li id="items_barra1"><a href="4.pagina_domicilio.html" id="enlaces_barra1"><img id="iconos"src="Iconos/ubicacion.png"></a></li>
+                    <li id="items_barra1"><a href="8.pagina_med.html" id="enlaces_barra1"><img id="iconos"src="Iconos/compras.png"></a></li>
+                    <li id="items_barra1"><a href="2.pagina_inicio_sesion.html" id="enlaces_barra1"><img id="iconos"src="Iconos/usuario.png"></a></li>
+                    <li id="items_barra1"><a href="5.pagina_pqrs.html" id="enlaces_barra1"><img id="iconos"src="Iconos/alerta.png"></a></li>
+                </ul>
+            </nav>   
+        </div>
+        <hr class="linea_separación">
+        <div class="contenedeor_cabeza logo_nav_items">
+            <nav class="menu">
+                <ul class="barra_2">
+                    <li id="items_barra"><a id="enlaces_barra" href="index.html">Inicio</a></li>
+                    <li id="items_barra"><a id="enlaces_barra" href="4.pagina_domicilio.html">Domicilio</a></li>
+                    <li id="items_barra"><a id="enlaces_barra" href="3.pagina_de_control.html">Control</a></li>
+                    <li id="items_barra"><a id="enlaces_barra" href="8.pagina_med.html">Medicamentos</a></li>
+                    <li id="items_barra"><a id="enlaces_barra" href="#eps">EPS</a></li>
+                    <li id="items_barra"><a id="enlaces_barra" href="5.pagina_pqrs.html">PQRS</a></li> 
+                </ul>
+            </nav>
+        </div>
+        <hr class="linea_separación">
+    </header>
+    <main class="cuerpo_indrugs">
+        <div class="contenido">
+            <div class="Control">
+                <h1 id="titulo_control">Control</h1>  
+                <hr class="linea_separación"> 
+                <form action="/datos" method="post">
+                    <fieldset>
+                        <legend id="subtitulo">Información personal </legend>
+                            <div class="info_personal">
+                                    <label for="ftname">Nombres:</label>
+                                        <input type="text" name="firstname" value="" id="ftname"> 
+                                    <label for="ltname">Apellidos:</label>
+                                        <input type="text" name="lastname" value="" id="ltname"> 
+                                    <div class="genero">
+                                        <label for="genero">Genero:</label>
+                                        <input type="radio" name="gender" value="male"> Masculino
+                                        <input type="radio" name="gender" value="female"> Femenino
+                                        <input type="radio" name="gender" value="other"> otro
+                                    </div>
+                                    <label for="iniciot">Fecha inicio tratamiento:</label> 
+                                        <input type="datetime-local" name="tratamiento" id="iniciot">
+                                    <label for="fint">Fecha fin tratamiento:</label> 
+                                        <input type="datetime-local" name="fintratamiento" id="fint">
+                            </div>
+                    </fieldset>
+        
+                    <fieldset>
+                        <legend id="subtitulo">Información médica </legend>
+                            <div class="problema_salud"> 
+                                <label>Problema de salud:</label><br>
+                                    <textarea name=“problema” rows=“4” cols=“10” id="problema">
+                                        Describa su problema de salud
+                                    </textarea>
+        
+                                <table class="tabla_med">
+                                    <tbody>
+                                        <tr >
+                                            <th id="info_med" colspan="2">
+                                                Medicamento 
+                                            </th>
+                                        </tr>
+        
+                                        <tr> 
+                                            <td id="codigo_med">
+                                                Código medicamento: 
+                                            </td>
+                                            <td id="nom_med">
+                                                Nombre medicamento:
+                                            </td>
+                                        </tr>
+                            
+                                        <tr>
+                                            <td>
+                                                <input type="number" name="quantity" min="0" id="cod_med">
+                                            </td>
+                                            <td>
+                                                <input type="text" name="name" value="" id="nombre_med">  
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>  
+                    </fieldset>
+        
+                    <fieldset>
+                        <legend id="subtitulo">Prescripción del medicamento</legend>
+                            <table class="tabla_prescrip">
+                                <tr div class="titulos_prescrip">
+                                        <th>Número medicamento</th>
+                                        <th>Descripción</th>
+                                        <th>Cantidad total</th>
+                                        <th>Frecuencia</th>
+                                        <th>Hora de alarma</th>
+                                        <th>Fórmula médica</th>
+                                    </div>
+                                </tr>
+                                
+                                <tr>
+                                    <td>
+                                        <input type="number" name="quantity" min="0" id="numero_cantidad">   
+                                    </td>
+                                    <td>
+                                        <textarea name=“descripcion” rows=“4” cols=“10” id="descripcion"></textarea>
+                                    </td>
+                                    <td>
+                                        <input type="text" name="cantidad" id="cantidad_frecuencia"> 
+                                    </td>
+                                    <td>
+                                        <input type="text" name="frecuencia" id="cantidad_frecuencia">
+                                    </td>
+                                    <td>
+                                        <input type="time" name="Alarma" id="alarma">
+                                    </td>
+                                    <td>
+                                        <input type="file" name="formula" id="formula">
+                                    </td>
+                                </tr>
+                            </table>
+                                    <input type="submit" value="Activar alarma">
+                        
+                    </fieldset>
+                </form>
+                <br>
+            </div>
+        </div>
+    </main>
+    <footer class="pie-pagina">
+        <hr class="linea_separación">
+            <div class="grupo-1">
+    
+                <div class="box">
+                    <h2>Contactanos</h2>
+                    <hr class="linea_separación"><p><i class="fa-solid fa-phone" style="color: #6bd10c;"></i> 601 6783 546 / 601 6789 564</p>
+                    <p> <i class="fa-brands fa-whatsapp" style="color: #6bd10c;"></i> Línea WhatsApp 327 678 5679</p>
+                </div>
+    
+                <div class="box">
+                    <h2>Nuestras tiendas</h2>
+                    <hr class="linea_separación"><p> Ubicar tienda  </p>
+                </div>
+    
+                <div class="box">
+                    <h2> Categorias </h2>
+                    <hr class="linea_separación"><p>EPS   </p>
+                    <p>PQRS   </p>
+                    <p>Control </p>
+                    <p>Domicilios</p>
+                    <p>Medicamentos</p> 
+                    <p>Solicitar servicios</p>
+                </div>
+    
+                <div class="box">
+                    <h2> Nosotros</h2>
+                    <hr class="linea_separación"><p> Quienes somos</p>
+                    <p> Nuestra historia </p>    
+                </div>   
+    
+            </div>
+    
+            <div class="grupo-2">
+                <hr class="linea_separación">
+                <small>DISPENSADORA DE MEDICAMENTOS InDrugs - La salud llega a tu puerta</small> 
+                <hr class="linea_separación">  
+            </div>
+                
+    </footer>
+</body>
+</html>

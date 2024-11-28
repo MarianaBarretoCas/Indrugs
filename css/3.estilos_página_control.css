@@ -1,0 +1,252 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
+.Control{
+    font-family: Quicksand;
+    margin-right: 10px;
+    font-weight:600;
+}
+#titulo_control{
+    text-align: center;
+    
+}
+#subtitulo{
+    font-weight: bolder;
+    font-size: large;
+}
+
+.info_personal input[type=text]:nth-of-type(1),
+input[type=text]:nth-of-type(2) {
+    width: 25%;
+    padding: 5px 10px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border-color: #b4b4b4;
+}
+
+    input[type=text]:focus {
+        border-color: #cfeecf;
+        outline: none;
+        box-shadow: 0 0 5px #9ff39f
+    }
+
+    .info_personal input[type=text]:nth-of-type(1):hover {
+    background-color: #f1f1f1;
+    }
+    .info_personal input[type=text]:nth-of-type(2):hover {
+    background-color: #f1f1f1;
+    }
+
+    .genero input[type="radio"] {
+        margin-right: 5px;
+    }
+
+    .genero input[type="radio"] + label {
+        margin-right: 20px;
+    }
+
+    input[type="datetime-local"] {
+        width: 15%;
+        padding: 3px 6px;
+        font-size: 15px;
+        color: #000000;
+        background-color: #ffffff;;
+        border-radius: 4px;
+        box-sizing: border-box;
+        transition: border-color 0.3s ease, background-color 0.3s ease;
+    }
+        input[type="datetime-local"]:hover {
+            border-color: #888;
+            background-color: #f1f1f1;
+        }
+
+        input[type="datetime-local"]:focus {
+            border-color: #cfeecf;
+            outline: none;
+            box-shadow: 0 0 5px #abebab
+        }
+
+#problema {
+    width: 50%;
+    height: 40px;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border: 2px solid #313131;
+    border-radius: 4px;
+    background-color: #ffffff;
+    resize: none;
+  }
+    #problema:hover {
+        border-color: #888;
+        background-color: #f1f1f1;
+    }
+    #problema:focus{
+        border-color: #cfeecf;
+        outline: none;
+        box-shadow: 0 0 5px #abebab
+    }
+
+.tabla_med{
+    width: 40%;   
+    text-align: center;
+    border: 1px solid #ffffff;
+ }
+    tbody{
+            text-align: center;
+    }
+    
+    th{
+        text-align: center;
+        vertical-align: top;
+        border: 1px solid #ffffff;
+    } 
+
+        #codigo_med{
+                text-align: left;
+                vertical-align: top;
+                border: 1px solid #ffffff;           
+        }
+            #cod_med{
+                width: 100%;
+                padding: 3px 6px;
+                font-size: 15px;
+                color: #000000;
+                background-color: #ffffff;;
+                border-radius: 4px;
+                box-sizing: border-box;
+                transition: border-color 0.3s ease, background-color 0.3s ease;
+            }
+            #cod_med:hover {
+                border-color: #888;
+                background-color: #f1f1f1;
+            }
+            #cod_med:focus{
+                border-color: #cfeecf;
+                outline: none;
+                box-shadow: 0 0 5px #abebab
+            }
+
+        #nom_med{
+            text-align: left;
+            vertical-align: top;
+            border: 1px solid #ffffff;
+        }
+            #nombre_med{
+                width: 100%;
+                padding: 3px 6px;
+                font-size: 15px;
+                color: #000000;
+                background-color: #ffffff;;
+                border-radius: 4px;
+                box-sizing: border-box;
+                transition: border-color 0.3s ease, background-color 0.3s ease;
+            }
+            #nombre_med:hover {
+                border-color: #888;
+                background-color: #f1f1f1;
+            }
+            #nombre_med:focus{
+                border-color: #cfeecf;
+                outline: none;
+                box-shadow: 0 0 5px #abebab
+            }
+
+#tabla_prescrip{
+    width: 100%;   
+    text-align: center;
+    border: 1px solid #000000;
+}
+
+    #numero_cantidad{
+        width: 100%;
+        padding: 3px 6px;
+        font-size: 15px;
+        color: #000000;
+        background-color: #ffffff;;
+        border-radius: 4px;
+        box-sizing: border-box;
+        transition: border-color 0.3s ease, background-color 0.3s ease;
+    }
+        #numero_cantidad:hover {
+            border-color: #888;
+            background-color: #f1f1f1;
+        }
+        #numero_cantidad:focus{
+            border-color: #cfeecf;
+            outline: none;
+            box-shadow: 0 0 5px #abebab
+        }
+
+    #descripcion{
+        width: 100%;
+        height: 20px;
+        padding: 12px 20px;
+        box-sizing: border-box;
+        border: 2px solid #2c2c2c;
+        border-radius: 4px;
+        background-color: #ffffff;
+        resize: none;
+      }
+        #descripcion:hover {
+            border-color: #888;
+            background-color: #f1f1f1;
+        }
+        #descripcion:focus{
+            border-color: #cfeecf;
+            outline: none;
+            box-shadow: 0 0 5px #abebab
+        }
+    
+    #cantidad_frecuencia{
+        width: 100%;
+        padding: 3px 6px;
+        font-size: 15px;
+        color: #000000;
+        background-color: #ffffff;;
+        border-radius: 4px;
+        box-sizing: border-box;
+        transition: border-color 0.3s ease, background-color 0.3s ease;
+        }
+            #cantidad_frecuencia:hover {
+                border-color: #888;
+                background-color: #f1f1f1;
+            }
+            #cantidad_frecuencia:focus{
+                border-color: #cfeecf;
+                outline: none;
+                box-shadow: 0 0 5px #abebab
+            }
+    
+    #alarma{
+        width: 100%;
+        height: 27px;
+        padding: 3px 6px;
+        font-size: 15px;
+        color: #000000;
+        background-color: #ffffff;;
+        border-radius: 4px;
+        box-sizing: border-box;
+        transition: border-color 0.3s ease, background-color 0.3s ease;
+        }
+            #alarma:hover {
+                border-color: #888;
+                background-color: #f1f1f1;
+            }
+            #alarma:focus{
+                border-color: #b9e7b9;
+                outline: none;
+                box-shadow: 0 0 5px #abebab
+            }
+            
+input[type=submit] {
+    width: 100%;
+    background-color: #23c72b;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  input[type=submit]:hover {
+    background-color: #25b62c;
+  }
