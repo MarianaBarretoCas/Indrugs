@@ -152,6 +152,11 @@ body{
                 background: #6bd10c;
             }
 }
+@media only screen and (max-width:767px){
+.cuerpo_indrugs{
+    margin-top: 27rem;
+}
+}
 /*Body*/
 .cuerpo_indrugs{
     padding-top: 10rem;
