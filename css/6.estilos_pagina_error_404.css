@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+:root{
+    margin: 0;
+    padding: 0;
+    color: #fff;
+    color :#121212;
+    --blue:#308bd1;
+    --gray:#959695;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    font-family: Quicksand, "Montserrat",sans-serif;
+    color: rgb(255, 255, 255);
+    background-color: #022c5c; 
+}
+
+.error_container{
+    max-width: 800px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:10px;
+    margin: 0 10px;
+
+}
+
+.error_code{
+    width: 100%;
+    margin: 0 auto;
+    font-size: 6rem;
+    font-weight: 800;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+p:first-of-type{
+    animation: fall 1s linear;
+    transform: rotateZ(-20deg);
+}
+
+p:last-of-type{
+    animation: fall 1.8s linear;
+    transform:rotateZ(8deg);
+
+}
+
+p:nth-last-of-type(2){
+    color: rgb(74, 227, 113);
+    animation: bounce 1.2s 1.8s linear forwards;
+    opacity: 0;
+}
+
+.error_titulo{
+    font-size: 1.5rem;
+    font-weight: 700;
+    pad: 0 3%;
+}
+
+.error_descripcion{
+    font-size: 0.9rem;
+    text-align: justify;
+    line-height: 1.6;
+    padding: 0 10%;
+    color: rgb(255, 255, 255);
+}
+
+.action{
+    font: inherit;
+    padding: 10px 30px;
+    margin-top: 1rem;
+    margin-left: 3rem;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    background-color: rgb(55, 222, 119);
+    color: rgb(0, 0, 0);
+}
+
+.action:hover{
+    opacity: 0.8;
+
+}
+
+.btn {
+    width: 100%;
+    background-color: #23c72b;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  .btn:hover {
+    background-color: #25b62c;
+  }
+@media screen and (min-widht: 48rem){
+    .error-descripcion{
+        padding: 0;}
+}
+@keyframes fall{
+    0%{
+        transform: translateY(-100vh);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
+@keyframes bounce{
+    0%,40%,75%,95%{
+        transform: translateY(0);
+        opacity: 1;
+    }
+    15%{
+        transform: translateY(-25px);
+    }
+    65%{
+        transform: translateY(-15px);
+    }
+    85%{
+        transform: translateY(-5px);
+    }
+    100%{
+        transform: rotateZ(45deg);
+        opacity: 1;
+    }
+}

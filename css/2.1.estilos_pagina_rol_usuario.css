@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+.titulo-rol{
+    text-align: center;
+    color: #0e0e0e;
+    justify-content: center;
+    
+}
+
+.btn{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    width: 500px;
+    border-color: rgb(107, 209, 12);
+}
+.btn:hover{
+    background-color: rgb(107, 209, 12);
+}
+.mt-3{
+    display: flex;
+    justify-content: center;
+    width:100%
+}
+.link_pag{
+    text-decoration: none;
+}
+p{
+    font-family: Quicksand;
+    font-size: 120%;
+}

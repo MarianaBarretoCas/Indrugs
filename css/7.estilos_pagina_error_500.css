@@ -1,0 +1,47 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
+body{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    font-family: Quicksand, "Montserrat",sans-serif;
+    color: white;
+    background-color: #022c5c;
+}
+.codigo_num{
+    width: 100%;
+    margin: 0 auto;
+    font-size: 6rem;
+    font-weight: 800;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 0;
+}
+p:first-of-type{
+    transform: rotateZ(-20deg);
+}
+p:nth-last-of-type(2){
+    color: rgb(74, 227, 113);
+    opacity: 1;
+}
+p:last-of-type{
+    transform:rotateZ(20deg);
+}
+
+.texto_error{
+    font-size: 1.5rem;
+    font-weight: 700;
+    justify-content: center;
+    text-align: center;
+}
+.descripcion{
+    font-size: 0.9rem;
+    text-align: center;
+    line-height: 1.6;
+    color: rgb(153, 151, 151);
+}

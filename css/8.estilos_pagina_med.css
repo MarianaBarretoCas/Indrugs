@@ -1,0 +1,46 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
+.titulo-medicamento{
+    font-family:Quicksand;
+    text-align: center;
+    color: #0e0e0e;   
+}
+.caja_filtro {
+    margin-left: 30px;
+    align-items: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+/*IMAGENES*/
+.img_tabla {
+    width: 100%;
+    height: 90%;
+    object-fit: cover;
+}
+    .img_tabla:hover {
+        width: 100%;
+        transform: scale(1.1);
+        transition: transform 0.1s ease-in-out;
+        box-shadow: 0px 2px 9px 2px rgba(0, 0, 0, 0.5);
+    }
+.tabla-completa{
+    border-collapse: separate;
+    border-spacing: 10px;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    table-layout: fixed;
+    width: 100%;
+    height: 100%;
+}
+.cuerpo_tabla_img, .encabezado_tabla_img, .contenido_head, .contenido_body{
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    box-shadow: 0px 2px 9px 2px rgba(134, 134, 134, 0.5);
+} 
+.contenido_body, .contenido_head{
+    border: 1px solid #000000;
+}
