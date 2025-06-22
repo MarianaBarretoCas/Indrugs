@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Agregar vehículo</title>
+    <script src="https://kit.fontawesome.com/14122cd484.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+	<link rel="stylesheet" href="css/1.estilos_pagina_inicio.css">
+    <link rel="stylesheet" href="css/13.estilos_pagina_agregar.css">
+</head>
+
+<body>
+	<header class="cabeza_indrugs">
+        <div class="contenedeor_cabeza logo_nav_items">
+            <a href="#" class="logo"><img class="img_indrugs_logo" src="imagenes/logo.png">Indrugs</a>
+            <a href="#"><input type="search" placeholder="Buscar..." id="buscador"></a>
+            <nav class="navegacion_1">
+                <ul class="barra_1">
+                   <li id="items_barra1"><a href="7.pagina_sobre_nosotros.html" id="enlaces_barra1"><img id="iconos"src="Iconos/ubicacion.png"></a></li>
+                    <li id="items_barra1"><a href="2.pagina_inicio_sesion.html" id="enlaces_barra1"><img id="iconos"src="Iconos/icons8-cerrar-sesión-96.png"></a></li>
+                    <li id="items_barra1"><a href="5.pagina_pqrs.html" id="enlaces_barra1"><img id="iconos"src="Iconos/alerta.png"></a></li>
+                </ul>
+            </nav>   
+        </div>
+        <hr class="linea_separación">
+        <div class="contenedeor_cabeza logo_nav_items">
+            <nav class="menu">
+                <ul class="barra_2">
+                    <li id="items_barra"><a id="enlaces_barra" href="11.pagina_principal_domiciliario.html">Inicio</a></li>
+                    <li id="items_barra"><a id="enlaces_barra" href="15.pagina_domicilio_domi.html">Domicilio</a></li> 
+                    <li id="items_barra"><a id="enlaces_barra" href="php/12.pagina_vehiculos.php">Vehículos</a></li>
+                    <li id="items_barra"><a id="enlaces_barra" href="php/14.pagina_ordenes.php">Órdenes</a></li>
+                    <li id="items_barra"><a id="enlaces_barra" href="index.html">Cerrar sesión</a></li> 
+                </ul>
+            </nav>
+        </div>
+        <hr class="linea_separación">
+    </header>
+    <main class="cuerpo_indrugs">
+        <div class="contenido">
+            <h1>Agregar vehículo</h1>
+            <form action="php/procesar_vehiculo.php" id="formuno" class="row mt-3 g-3 needs-validation" novalidate method="POST">
+                    
+                <div class="mt-2 mb-2 col-12">
+                    <label for="nombres" class="form-label" id="form_text">Nombre propietario: </label> 
+                    <input type="text" id="nombres" name="PROPIETARIO_USUARIOS" class="form-control" required>
+                        <div class="valid-feedback">
+                            BIEN.
+                        </div>
+                        <div class="invalid-feedback">
+                            Por favor ingrese su nombre completo.
+                        </div>         
+                </div>
+
+                <div class="mt-2 mb-2 col-12"> 
+                    <label for="service" id="form_text" class="form-label">Tipo de vehículo:</label> 
+                    <select id="service" class="form-select" name="TIPO_VEHICULO" required>
+                        <option value="" selected disabled>Elija tipo de vehículo</option>
+                        <option value="Moto">Moto</option>
+                        <option value="Carro">Carro</option>
+                    </select>
+                        <div class="valid-feedback">
+                            Correcto.
+                        </div>
+                        <div class="invalid-feedback">
+                            Por favor seleccione una opción.
+                        </div>
+                </div>
+
+                <div class="mt-2 mb-2 col-12">
+                    <label for="placa" class="form-label">Número de placa: </label> 
+                    <input type="text" id="placa" name="PLACA_VEHICULO" class="form-control" minlength="6" maxlength="6" required>
+                        <div class="valid-feedback">
+                            BIEN.
+                        </div>
+                        <div class="invalid-feedback">
+                            Por favor ingrese un número de placa válido.
+                        </div>
+                </div>
+
+                <div class="mt-2 mb-2 col-12">
+                    <label for="color" class="form-label">Color:</label> 
+                    <input type="text" id="color" name="COLOR_VEHICULO" class="form-control" required>
+                        <div class="valid-feedback">
+                            BIEN.
+                        </div>
+                        <div class="invalid-feedback">
+                            Por favor ingrese un color.
+                        </div>         
+                </div>
+                
+                <div class="mt-2 mb-2 col-12">
+                    <label for="marca" class="form-label">Marca:</label> 
+                    <input type="text" id="marca" name="MARCA_VEHICULO" class="form-control" required>
+                        <div class="valid-feedback">
+                            BIEN.
+                        </div>
+                        <div class="invalid-feedback">
+                            Por favor ingrese la marca del vehículo.
+                        </div>         
+                </div>  
+
+                <div class="mt-2 mb-2 col-12"> 
+                    <label for="service" id="form_text" class="form-label">Estado:</label> 
+                    <select id="service" class="form-select" required name="ESTADO_VEHICULO">
+                        <option value="" selected disabled>Elija estado del vehículo</option>
+                        <option value="1">Activo</option>
+                        <option value="2">Inactivo</option>
+                    </select>
+                        <div class="valid-feedback">
+                            Correcto.
+                        </div>
+                        <div class="invalid-feedback">
+                            Por favor seleccione una opción.
+                        </div>    
+                        <div class="mt-3 col-12">
+                            <button class="btn btn-primary" type="submit" id="enviar_solicitud" >Agregar vehículo</button>    
+                        </div>
+                </div>                
+            </form>
+        </div>    
+    </main>
+    <footer class="pie-pagina">
+	<hr class="linea_separación">
+        <div class="grupo-1">
+
+            <div class="box">
+                    <h2>Contactanos</h2>
+                    <hr class="linea_separación">
+                    <p><i class="fa-solid fa-phone" style="color: #6bd10c;"></i> 601 6783 546 / 601 6789 564</p>
+                    <p><i class="fa-brands fa-whatsapp" style="color: #6bd10c;"></i> Línea WhatsApp 327 678 5679</p>
+                    <p><i class="fa-brands fa-facebook" style="color: #6bd10c;"></i>Facebook Indrugs</p>
+                </div>
+
+            <div class="box">
+                <h2>Nuestras tiendas</h2>
+                <hr class="linea_separación"><p> Ubicar tienda  </p>
+            </div>
+
+            <div class="box">
+                <h2> Categorias </h2>
+                <hr class="linea_separación">
+                <ul  class="lista_mapa_nav">
+                    <li><a class="mapa_nav" href="10.pagina_mapa_nav.html">Mapa de navegación</a></li>
+                    <li><a class="mapa_nav" href="404.html">Error 404</a></li>
+                    <li><a class="mapa_nav" href="500.html">Error 500</a></li>
+                </ul>               
+            </div>
+
+            <div class="box">
+                <h2> Nosotros</h2>
+                <hr class="linea_separación"><ul  class="lista_mapa_nav">
+                    <li><a class="mapa_nav" href="7.pagina_sobre_nosotros.html">Quiénes somos</a></li>  
+                    <li><a class="mapa_nav" href="7.pagina_sobre_nosotros.html">Acerca del proyecto</a></li>  
+                </ul>
+                 
+            </div>
+        </div>
+
+        <div class="grupo-2">
+            <hr class="linea_separación">
+            <small>DISPENSADORA DE MEDICAMENTOS InDrugs - La salud llega a tu puerta</small> 
+            <hr class="linea_separación">  
+        </div>
+        <script>
+            // Example starter JavaScript for disabling form submissions if there are invalid fields
+        (() => {
+            'use strict'
+
+            // Fetch all the forms we want to apply custom Bootstrap validation styles to
+            const forms = document.querySelectorAll('.needs-validation')
+
+            // Loop over them and prevent submission
+            Array.from(forms).forEach(form => {
+                form.addEventListener('submit', event => {
+                if (!form.checkValidity()) {
+                    event.preventDefault()
+                    event.stopPropagation()
+                }
+
+                form.classList.add('was-validated')
+                }, false)
+            })
+            })()   
+         </script>    
+    </footer>
+</body>
+</html>

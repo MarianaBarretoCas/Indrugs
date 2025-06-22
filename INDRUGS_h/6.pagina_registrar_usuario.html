@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Indrugs</title>
+    <script src="https://kit.fontawesome.com/14122cd484.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+	<link rel="stylesheet" href="css/1.estilos_pagina_inicio.css">
+    <link rel="stylesheet" href="css/11.estilos_registrar_usuario.css">
+	
+</head>
+
+<body>
+	<header class="cabeza_indrugs">
+        <div class="contenedeor_cabeza logo_nav_items">
+            <a href="#" class="logo"><img class="img_indrugs_logo" src="imagenes/logo.png">Indrugs</a>
+            <a href="#"><input type="search" placeholder="Buscar..." id="buscador"></a>
+            <nav class="navegacion_1">
+                <ul class="barra_1">
+                   <li id="items_barra1"><a href="7.pagina_sobre_nosotros.html" id="enlaces_barra1"><img id="iconos"src="Iconos/ubicacion.png"></a></li>
+                    <li id="items_barra1"><a href="2.pagina_inicio_sesion.html" id="enlaces_barra1"><img id="iconos"src="Iconos/usuario.png"></a></li>
+                    <li id="items_barra1"><a href="10.pagina_mapa_nav.html" id="enlaces_barra1"><img id="iconos"src="Iconos/icons8-brújula-96.png"></a></li>
+                </ul>
+            </nav>   
+        </div>
+        <hr class="linea_separación">
+        <div class="contenedeor_cabeza logo_nav_items">
+            <nav class="menu">
+                <ul class="barra_2">
+                    <li id="items_barra"><a id="enlaces_barra" href="index.html">Inicio</a></li>
+                    <li id="items_barra"><a id="enlaces_barra" href="2.pagina_inicio_sesion.html">Iniciar sesión</a></li> 
+                    <li id="items_barra"><a id="enlaces_barra" href="10.pagina_mapa_nav.html">Mapa de navegación</a></li>
+                    <li id="items_barra"><a id="enlaces_barra" href="7.pagina_sobre_nosotros.html">Nosotros</a></li> 
+                </ul>
+            </nav>
+        </div>
+        <hr class="linea_separación">
+    </header>
+    <main class="cuerpo_indrugs">
+        <div class="contenido">
+            <div class="datos_registrarse"> 
+                <h1>Registrarse</h1>
+                
+                    <form action="php/procesar.php" method="POST" id="registro" class="row mt-3 g-3 needs-validation" novalidate>  
+                        <div class="col-12"> 
+                            <label for="ROLES_USUARIOS" class="form-label">Rol:</label> 
+                            <select id="service" class="form-select" name="ROLES_USUARIOS" required>
+                                <option value="" selected disabled>Elija su rol</option>
+                                <option value="1">Administrador</option>
+                                <option value="2">Paciente</option>
+                                <option value="3">Domiciliario</option>
+                            </select>
+                                <div class="valid-feedback">
+                                    Correcto.
+                                </div>
+                                <div class="invalid-feedback">
+                                    Por favor seleccione una opción.
+                                </div>    
+                        </div>
+                        <div class="col-12"> 
+                            <label for="TIPODOC_USUARIOS" class="form-label">Tipo de documento:</label> 
+                            <select id="service" class="form-select" name="TIPODOC_USUARIOS" required>
+                                <option value="" selected disabled>Elija tipo de documento</option>
+                                <option value="1">Cédula de ciudadanía</option>
+                                <option value="2">Tarjeta de identidad</option>
+                            </select>
+                                <div class="valid-feedback">
+                                    Correcto.
+                                </div>
+                                <div class="invalid-feedback">
+                                    Por favor seleccione una opción.
+                                </div>    
+                        </div>
+
+                        <div class="col-12">
+                            <label for="NUMDOC_USUARIOS" class="form-label">Numero de documento:</label> 
+                            <input type="number" class="form-control" name="NUMDOC_USUARIOS" id="numero_documento" required minlength="8">
+                                <div class="valid-feedback">
+                                    BIEN.
+                                </div>
+                                <div class="invalid-feedback">
+                                    Por favor ingrese su documento.
+                                </div>         
+                        </div>
+
+                        <div class="col-12">
+                            <label for="NOMBRE_USUARIOS" class="form-label">Nombre completo: </label> 
+                            <input type="text" id="nombres" name="NOMBRE_USUARIOS" class="form-control" required>
+                                <div class="valid-feedback">
+                                    BIEN.
+                                </div>
+                                <div class="invalid-feedback">
+                                    Por favor ingrese su nombre/s.
+                                </div>         
+                        </div>
+            
+                        <div class="col-12">
+                            <label for="CORREO_USUARIOS" class="form-label">Correo Electrónico:</label>
+                            <input id="email" class="form-control" name="CORREO_USUARIOS" type="email" required>
+                                <div class="valid-feedback">
+                                    Hemos registrado su correo.
+                                </div>
+                                <div class="invalid-feedback">
+                                    Por favor ingrese un correo válido.
+                                </div>
+                        </div>
+                            
+                        <div class="col-12">
+                            <label for="DIRECCION_USUARIOS" class="form-label">Dirección de Domicilio:</label>
+                            <input type="text" class="form-control" id="direccion" name="DIRECCION_USUARIOS" placeholder="Calle 123, Ciudad, País" required>
+                                <div class="valid-feedback">
+                                    BIEN.
+                                </div>
+                                <div class="invalid-feedback">
+                                    Por favor ingrese una dirección válida.
+                                </div>
+                        </div>
+
+                        <div class="col-12">
+                            <label for="TELEFONO_USUARIOS" class="form-label">Teléfono: </label> 
+                            <input type="tel" id="telefono" name="TELEFONO_USUARIOS" class="form-control" required minlength="7" maxlength="10">
+                                <div class="valid-feedback">
+                                    BIEN.
+                                </div>
+                                <div class="invalid-feedback">
+                                    Por favor ingrese un número teléfono válido.
+                                </div>
+                        </div> 
+
+                        <div class="col-12">
+                            <label for="CONTRASEÑA_USUARIOS">Contraseña</label>
+                            <input id="contraseña" class="form-control" type="password" name="CONTRASEÑA_USUARIOS" required minlength="8" placeholder="Ingrese una contraseña">   
+                                <div class="valid-feedback">
+                                    Hemos registrado su contraseña.
+                                </div>
+                                <div class="invalid-feedback">
+                                    Por favor ingrese una contraseña de 8 caracteres.
+                                </div>
+                        </div>
+        
+                        <div class="col-12">
+                            <button class="btn btn-primary" type="submit">Registrarse</button>
+                        </div>        
+                    </form>     
+                    
+        </div>    
+    </main>
+    <footer class="pie-pagina">
+	<hr class="linea_separación">
+        <div class="grupo-1">
+
+            <div class="box">
+                    <h2>Contactanos</h2>
+                    <hr class="linea_separación">
+                    <p><i class="fa-solid fa-phone" style="color: #6bd10c;"></i> 601 6783 546 / 601 6789 564</p>
+                    <p><i class="fa-brands fa-whatsapp" style="color: #6bd10c;"></i> Línea WhatsApp 327 678 5679</p>
+                    <p><i class="fa-brands fa-facebook" style="color: #6bd10c;"></i>Facebook Indrugs</p>
+                </div>
+
+            <div class="box">
+                <h2>Nuestras tiendas</h2>
+                <hr class="linea_separación"><p> Ubicar tienda  </p>
+            </div>
+
+            <div class="box">
+                <h2> Categorias </h2>
+                <hr class="linea_separación">
+                 <ul  class="lista_mapa_nav">
+                    <li><a class="mapa_nav" href="10.pagina_mapa_nav.html">Mapa de navegación</a></li> 
+                    <li><a class="mapa_nav" href="404.html">Error 404</a></li> 
+                    <li><a class="mapa_nav" href="500.html">Error 500</a></li>
+                 </ul>
+            </div>
+
+            <div class="box">
+                <h2> Nosotros</h2>
+                <hr class="linea_separación"><ul  class="lista_mapa_nav">
+                    <li><a class="mapa_nav" href="7.pagina_sobre_nosotros.html">Quiénes somos</a></li>  
+                    <li><a class="mapa_nav" href="7.pagina_sobre_nosotros.html">Acerca del proyecto</a></li>  
+                </ul>
+                 
+            </div>
+
+        </div>
+
+        <div class="grupo-2">
+            <hr class="linea_separación">
+            <small>DISPENSADORA DE MEDICAMENTOS InDrugs - La salud llega a tu puerta</small> 
+            <hr class="linea_separación">  
+        </div>
+
+        <script>
+
+            (() => {
+                'use strict'
+
+                
+                const forms = document.querySelectorAll('.needs-validation')
+
+                
+                Array.from(forms).forEach(form => {
+                    form.addEventListener('submit', event => {
+                    if (!form.checkValidity()) {
+                        event.preventDefault()
+                        event.stopPropagation()
+                    }
+
+                    form.classList.add('was-validated')
+                    }, false)
+                })
+                })()
+        </script>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,79 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
+
+/* Contenedor de imagen y contenido */
+.contiene-img {
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    z-index: 2;
+    width: 100%;
+    height: 500px;
+}
+
+/* Estilo para la imagen */
+.img_aspirina {
+    width: 400px; /* Ajusta el tamaño de la imagen */
+    height: 400px; 
+    border: 1px solid rgb(182, 180, 180); 
+    border-radius: 3%;
+}
+
+/* Contenedor de la información */
+.info-medicamento {
+    color: rgb(0, 0, 0);/* Color del texto */
+}
+
+/* Estilo de los elementos de texto */
+.rexona {
+    font-family:Quicksand;
+    font-size: 24px;
+    font-weight: 700;
+    justify-content: space-between;
+}
+#cantidad_solicitada{
+    width: 15%;
+    padding: 3px 6px;
+    font-size: 15px;
+    color: #000000;
+    background-color: #ffffff;;
+    border-radius: 4px;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease, background-color 0.3s ease;
+}
+#cantidad_solicitada:hover {
+        border-color: #888;
+        background-color: #f1f1f1;
+    }
+    #cantidad_solicitada:focus{
+        border-color: #cfeecf;
+        outline: none;
+        box-shadow: 0 0 5px #abebab}
+/* Estilo para el botón */
+.boton_solicitar {
+    padding: 10px 20px;
+    background-color: rgb(107, 209, 12);
+    border: none;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 200%;
+}
+#boton_solicitar {
+    width: 100%;
+    background-color: #23c72b;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  #boton_solicitar:hover {
+    background-color: #25b62c;
+  }
+
+
